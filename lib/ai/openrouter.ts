@@ -13,7 +13,7 @@ export const openrouter = apiKey
 // Modelo configurable por env. Por defecto un modelo gratuito de OpenRouter.
 // Puedes cambiarlo sin tocar código: definí OPENROUTER_MODEL en .env.local.
 export const CHAT_MODEL_ID =
-  process.env.OPENROUTER_MODEL ?? "meta-llama/llama-3.3-8b-instruct:free";
+  process.env.OPENROUTER_MODEL ?? "meta-llama/llama-3.3-70b-instruct:free";
 
 export function getChatModel() {
   if (!openrouter) {
